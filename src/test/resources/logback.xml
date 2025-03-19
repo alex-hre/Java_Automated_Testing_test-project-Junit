@@ -1,0 +1,12 @@
+<configuration>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss} [%level] - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="com.epam" level="debug"/>
+    <root level="info">
+        <appender-ref ref="STDOUT"/>
+    </root>
+</configuration>
