@@ -19,8 +19,8 @@ public class LoginPage {
     private WebDriver driver;
 
     /**
-     * Web elements for login form fields and buttons.
-     * Uses @FindBy annotation for locating elements via XPath.
+     * Web elements for login form fields and buttons
+     * Uses @FindBy annotation for locating elements via css
      */
 
     @FindBy(css = "input[data-test='username']")
@@ -32,7 +32,7 @@ public class LoginPage {
     @FindBy(css = "input[data-test='login-button']")
     private WebElement loginButton;
 
-    @FindBy(css = ".error-message-container") // Локатор ошибки
+    @FindBy(css = ".error-message-container")
     private WebElement errorMessage;
 
     @FindBy(css = "div.app_logo")
