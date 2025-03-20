@@ -23,28 +23,23 @@ public class LoginPage {
      * Uses @FindBy annotation for locating elements via XPath.
      */
 
-    /*@FindBy(id = "user-name")
-    private WebElement usernameInput;*/
-    @FindBy(xpath = "//*[@class='form_group']/*[@name='user-name']")
+    @FindBy(css = "input[data-test='username']")
     private WebElement usernameInput;
 
-    /*@FindBy(id = "password")
-    private WebElement passwordInput;*/
-    @FindBy(xpath = "//*[@class='form_group']/*[@name='password']")
+    @FindBy(css = "input[data-test='password']")
     private WebElement passwordInput;
 
-    /*@FindBy(id = "login-button")
-    private WebElement loginButton;*/
-    @FindBy(xpath = "//form/*[@name='login-button']")
+    @FindBy(css = "input[data-test='login-button']")
     private WebElement loginButton;
 
-    /*@FindBy(css = ".error-message-container") // Локатор ошибки
-    private WebElement errorMessage;*/
-    @FindBy(xpath = "//*[@class='error-message-container error']/*[@data-test='error']") // Локатор ошибки
+    @FindBy(css = ".error-message-container") // Локатор ошибки
     private WebElement errorMessage;
 
-    @FindBy(xpath = "//div[@class = 'app_logo']")
+    @FindBy(css = "div.app_logo")
     private WebElement siteTitle;
+
+
+
 
 
     /**Logger instance for logging actions*/
